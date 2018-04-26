@@ -1,0 +1,75 @@
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\unimathsetup{math-style=ISO,bold-style=ISO, % ISO standards for italic & bold
+	nabla=upright, partial=upright, % Operators should be upright
+}
+
+\usepackage{babel}
+
+\usepackage[margin=2cm,top=1.25cm,bottom=2.5cm,footskip=0.65cm]{geometry}
+\usepackage{ragged2e}
+\RaggedRight
+
+\usepackage{parskip}
+\parskip=\baselineskip \advance\parskip by 0pt plus 2pt
+
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\setmathfont{XITS Math}
+\setsansfont{Calibri}
+\linespread{0.93} % MS Word uses 1.15 * 11 pt base line skip, while LaTeX uses 13.6 for 11 pt font. Need a line spread of 1.15 / (13.6 / 11) = 0.93 to match.
+
+\date{}
+\author{}
+
+\usepackage{titling}
+\pretitle{\Large\bfseries}
+\posttitle{\par}
+\preauthor{}
+\postauthor{\par}
+\predate{}
+\postdate{\par\vskip -1.5em}
+\setlength{\droptitle}{-60pt}
+
+\usepackage{titlesec}
+\titlespacing*{\part}{0pt}{0pt}{0pt}
+\titlespacing*{\section}{0pt}{0pt}{-1\parskip}
+\titlespacing*{\subsection}{0pt}{0pt}{-1\parskip}
+\titlespacing*{\subsubsection}{0pt}{0pt}{-1\parskip}
+\titlespacing*{\paragraph}{0pt}{0pt}{1em}
+\titlespacing*{\subparagraph}{17pt}{0pt}{1em}
+\titleformat{\part}{\normalfont\large\bfseries}{PART~\arabic{part}:}{1em}{\normalfont\large\bfseries}
+\titleformat{\section}{\normalfont\normalsize\bfseries}{\thesection.}{1em}{\normalfont\normalsize\bfseries}
+\titleformat{\subsection}{\normalfont\normalsize\bfseries}{\thesubsection.}{1em}{\normalfont\normalsize\bfseries}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries}{\thesubsubsection.}{1em}{\normalfont\normalsize\bfseries}
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\fancypagestyle{plain}{%
+\fancyhf{} % clear all header and footer fields
+\fancyfoot[R]{\footnotesize side \thepage/\pageref*{LastPage}}
+\fancyfoot[C]{\footnotesize Kompetanseprosjekt for næringslivet, mal for prosjektbeskrivelse 07.12.2010}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}}
+\pagestyle{plain}
+
+\usepackage{tabulary}
+\renewcommand{\arraystretch}{1.1}
+\setlength{\arrayrulewidth}{0.5pt}
+
+\usepackage{xcolor}
+\definecolor{tangored}{HTML}{CC0000}
+\definecolor{tangogreen}{HTML}{4E9A06}
+\definecolor{tangoblue}{HTML}{3465A4}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	linkcolor={tangored},
+	citecolor={tangogreen},
+	urlcolor={tangoblue}
+}
+
+\usepackage[strict, english=british]{csquotes}
+\MakeOuterQuote{"}
+
+\frenchspacing
