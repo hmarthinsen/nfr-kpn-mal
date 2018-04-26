@@ -2,4 +2,8 @@ syntax: glob
 *.aux
 *.log
 *.out
-*.pdf
+*.blg
+*.bcf
+*.bbl
+*.run.xml
+__latexindent_temp.tex

@@ -57,6 +57,9 @@
 \renewcommand{\arraystretch}{1.1}
 \setlength{\arrayrulewidth}{0.5pt}
 
+\usepackage{caption}
+\captionsetup{font=footnotesize}
+
 \usepackage{xcolor}
 \definecolor{tangored}{HTML}{CC0000}
 \definecolor{tangogreen}{HTML}{4E9A06}
@@ -71,5 +74,9 @@
 
 \usepackage[strict, english=british]{csquotes}
 \MakeOuterQuote{"}
+
+\usepackage{biblatex}
+\addbibresource{eksempel.bib}
+\AtBeginBibliography{\footnotesize}
 
 \frenchspacing

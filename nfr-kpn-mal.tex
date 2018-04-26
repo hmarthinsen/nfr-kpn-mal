@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper,norsk]{article}
+\documentclass[11pt,a4paper,british]{article}
 \input{nfr-preamble}
 
 \usepackage{mathtools}
@@ -11,6 +11,21 @@
 \begin{document}
 
 \maketitle
+
+Teksten frem til "Knowledge needs" er ikke en del av malen.
+Her er en sitering~\cite{einstein}, og en til~\cite{dirac}.
+Slik ser en nummerert ligning ut:
+\begin{equation}
+	\label{eq:eksempel}
+	f(x) = \int_0^\infty \frac{x + \sin(x)}{\lvert x \rvert} \, \mathrm{d} x.
+\end{equation}
+Var ikke \cref{eq:eksempel} flott?
+En eksempelfigur finner du i \cref{fig:eksempel}.
+\begin{figure}
+	\centering
+	\includegraphics{eksempelbilde}
+	\caption{Eksempelbilde (ikke del av malen)\label{fig:eksempel}}
+\end{figure}
 
 \part{Knowledge needs}
 
@@ -144,5 +159,7 @@ Dersom kjønnsperspektivet er relevant for innholdet i forskningen, beskriv hvor
 
 \section{Additional information specifically requested in the call}
 Her skal det kun gis opplysninger som utlysningen eksplisitt har henvist til dette punktet.
+
+\printbibliography
 
 \end{document}
