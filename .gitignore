@@ -7,3 +7,5 @@ syntax: glob
 *.bbl
 *.run.xml
 __latexindent_temp.tex
+*.fdb_latexmk
+*.fls
