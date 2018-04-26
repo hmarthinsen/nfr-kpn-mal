@@ -11,9 +11,11 @@ Selv om kloneskrifttypene er ekstremt like de opprinnelige, så bryter du da ins
 
 Bruk LuaLaTeX til kompilering, og Biber til bibliografi.
 Det enkleste er å bruke Latexmk:
-```
+```bash
 latexmk -lualatex nfr-kpn-mal
 ```
 Send gjerne forbedringsforlag / pull requests om du finner feil.
 
-**NB: Jeg tar intet ansvar for at malen er 100 % korrekt. Om du bruker malen, så bærer du det fullstendige ansvaret selv. Om du får din søknad avvist på grunn av malen så er det ditt eget ansvar.**
+**NB: Jeg tar intet ansvar for at malen er 100 % korrekt.
+Om du bruker malen, så bærer du det fullstendige ansvaret selv.
+Om du får din søknad avvist på grunn av malen så er det ditt eget ansvar.**
